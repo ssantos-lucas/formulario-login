@@ -1,0 +1,122 @@
+:root{
+    --cor: #3a68b7;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cor);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form{
+    width: 80%;
+    max-width: 32rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .3) .5rem, white .5rem);
+}
+
+
+
+fieldset{
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    gap: .25em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+input {
+    background-color: white;
+    border: 2px solid transparent;
+    border-bottom-color: var(--cor);
+    padding: .5em 0;
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+    color: black;
+    outline: none;
+
+    transition: padding-left .08s;
+}
+
+input:focus{
+    outline: 1px solid var(--cor);
+    padding-left: .3rem;
+}
+
+
+label{
+    color: var(--cor);
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+legend{
+    font-weight: 300;
+    color: var(--cor);
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+form .links{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form .links2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    cursor: pointer;
+    padding: .8rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+.primary{
+    color: white;
+    background-color: var(--cor);
+}
+
+.secondary{
+    color: var(--cor);
+}
+
+
+.senha{
+    font-size: .85rem;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.btn2{
+    background-color: var(--cor);
+    color: white;
+    cursor: pointer;
+    padding: .5em 1.2em;
+    font-size: 1em;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 1em;
+}
